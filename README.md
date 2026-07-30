@@ -5,7 +5,7 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 다운로드
 
-**[최신 버전 0.8.1 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-0.8.1-Setup.exe`
+**[최신 버전 0.8.2 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-0.8.2-Setup.exe`
 
 [Releases](https://github.com/woosshe/TokTok-releases/releases/latest)에서 `TokTok-<버전>-Setup.exe`를
 받아 실행하면 됩니다. 마법사 없이 바로 설치되며 관리자 권한은 필요 없습니다.
@@ -52,6 +52,9 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 버전 히스토리
 
+- **0.8.2** — 알림 메뉴의 `N 분/시간 후` 줄을 고쳤습니다. 숫자 칸을 눌렀을 때 **자주 쓰는 값이
+  하나만 보이던 문제**, **어두운 테마에서 `분/시간` 목록의 글자가 잘 보이지 않던 문제**를
+  고쳤고, 숫자 칸과 단위 칸의 폭을 같게 맞췄습니다. `내일 저녁` 프리셋이 추가됐습니다
 - **0.8.1** — 알림 메뉴에 **`N 분/시간 후`**가 생겼습니다. 숫자는 직접 입력할 수도 있고 자주 쓰는
   값에서 고를 수도 있어, 프리셋으로 딱 맞지 않는 간격("40분 뒤")을 바로 걸 수 있습니다.
   `직접 지정`에서 **달력·시계 피커**도 쓸 수 있게 됐습니다(키보드 입력도 그대로 됩니다)
