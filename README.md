@@ -5,7 +5,7 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 다운로드
 
-**[최신 버전 1.0.0 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.0.0-Setup.exe`
+**[최신 버전 1.0.1 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.0.1-Setup.exe`
 
 [Releases](https://github.com/woosshe/TokTok-releases/releases/latest)에서 `TokTok-<버전>-Setup.exe`를
 받아 실행하면 됩니다. 마법사 없이 바로 설치되며 관리자 권한은 필요 없습니다.
@@ -54,6 +54,9 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 버전 히스토리
 
+- **1.0.1** — 고친 것: 메모가 하나도 안 보이는 상태에서 작업 표시줄의 TokTok 버튼을 눌러 뜬
+  메모 목록 창을 닫아도, 버튼을 다시 누를 때마다 그 창이 계속 다시 떠 있던 문제. 화면에 떠
+  있던 마지막 메모를 닫는 순간에도 목록 창이 저절로 뜨던 문제.
 - **1.0.0** — 메모를 여러 개 띄워도 **작업 표시줄에는 TokTok 버튼이 하나만** 뜹니다(예전에는 띄운
   메모 수만큼 늘어났습니다). 그 버튼을 누르면 트레이 아이콘을 누른 것과 같이 떠 있는 메모가 모두
   앞으로 나오고, 마우스를 올렸을 때 나오는 미리보기에는 TokTok 아이콘이 표시됩니다. 작업 표시줄에서
