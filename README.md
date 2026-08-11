@@ -5,7 +5,7 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 다운로드
 
-**[최신 버전 1.1.0 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.1.0-Setup.exe`
+**[최신 버전 1.2.0 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.0-Setup.exe`
 
 [Releases](https://github.com/woosshe/TokTok-releases/releases/latest)에서 `TokTok-<버전>-Setup.exe`를
 받아 실행하면 됩니다. 마법사 없이 바로 설치되며 관리자 권한은 필요 없습니다.
@@ -53,6 +53,11 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 - **체크리스트** — 본문에 할 일 체크박스, 클릭으로 완료 처리
 
 ## 버전 히스토리
+
+- **1.2.0** — **앱을 한국어와 영어로 쓸 수 있습니다.** 설정 창의 **언어**에서 고르며, 기본값인
+  `자동`은 Windows 언어를 따라갑니다(한국어면 한국어, 그 밖에는 영어). 바꾸면 다시 시작할지
+  물어보고, 나중에 하더라도 다음 실행부터 적용됩니다. 이 변경 내용도 앱 언어에 맞춰 보입니다.
+  메모 내용은 그대로입니다 — 바뀌는 것은 버튼·메뉴 같은 앱 화면의 글자뿐입니다.
 
 - **1.1.0** — **메모에 이미지를 붙여넣을 수 있습니다.** 스크린샷은 저장될 때 자동으로 가볍게
   변환되고(용량이 크게 줄어듭니다), 웹에서 복사한 이미지는 메모 안에 담기므로 인터넷이 없어도
@@ -154,6 +159,14 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
   자동 생성, 어두운 배경에서 기본 본문색 자동 밝게(직접 지정색은 유지)
 - **0.1.0** — 최초 버전: 프레임리스 메모, 접기/펼치기·가장자리 도킹, 리치텍스트,
   배경색, 알약 폭 조절, 휴지통, 트레이 상주, exe 빌드
+
+## Version history
+
+- **1.2.0** — **TokTok now speaks English as well as Korean.** Pick your language under
+  **Language** in Settings; the default `Auto` follows your Windows language (Korean if your
+  system is Korean, English otherwise). Changing it asks whether to restart, and if you say
+  later it applies the next time you start TokTok. These release notes follow the app language
+  too. Your notes are untouched — only the app's own text changes.
 
 ---
 
