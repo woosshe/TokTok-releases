@@ -168,6 +168,125 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
   later it applies the next time you start TokTok. These release notes follow the app language
   too. Your notes are untouched — only the app's own text changes.
 
+- **1.1.0** — **You can paste images into notes.** Screenshots are automatically converted to a
+  lighter format when saved (a large size reduction), and images copied from the web are stored
+  inside the note, so they still show up with no internet connection. Notes list and Trash show
+  them as small previews.
+  Pasting is cleaner too — copying text from the web no longer brings **background and font
+  colors** with it, only structure such as lists and bold.
+  **Always on top** now has its own **pin button** in the note's bottom toolbar (when a note is
+  collapsed into a pill, the pin shows along its edge instead).
+  Fixes: deleted empty notes **reappearing on their own** after a sync, closing an image-only
+  note with ✕ **losing the note**, image notes showing as `(empty note)` in Trash,
+  double-clicking the tray icon to create a note **also opening the notes list or creating two
+  notes**, pasted animated GIFs **turning into a still frame**, and search now matches
+  `<` `>` `&` as well
+
+  > ⚠️ **If you use TokTok on more than one device, please update them all to this version.**
+  > From this version, **permanent deletion propagates correctly between devices.** Previously,
+  > permanently deleting a note on one device could bring it back when a copy on another device
+  > synced; TokTok now records that it was deleted and blocks that. However, **devices on older
+  > versions do not understand that record** and show it as an empty item in Trash (restoring
+  > that item creates an empty note). Once every device is updated, this goes away.
+
+- **1.0.1** — Fixes: with no notes on screen, the notes list opened from the TokTok taskbar
+  button kept coming back every time the button was pressed, even after closing it. The notes
+  list also opened by itself the moment the last visible note was closed.
+- **1.0.0** — However many notes are on screen, **the taskbar now shows a single TokTok button**
+  (it used to show one per note). Pressing it brings every visible note to the front, exactly
+  like clicking the tray icon, and its hover preview shows the TokTok icon. To keep TokTok off
+  the taskbar entirely, turn on **Taskbar → Use the tray icon only** in Settings and open it
+  from the tray icon instead.
+  Fixes: notes and pills **growing slightly larger** each time they were dragged between
+  monitors with different display scaling (for example 100% and 125%)
+- **0.9.0** — Settings now has **Backup**. You can export all your notes to a file and import a
+  backup from another device or point in time (imported notes arrive hidden in the notes list,
+  so you can review them and show only the ones you want). Automatic backup files can be opened
+  or revealed in their folder straight from Settings.
+  Trash gained **Empty trash** to permanently delete everything at once, and the context menu
+  gained **Collapse same color**. Empty notes are now deleted outright when closed with ✕
+  instead of being left in the list.
+  Fixes: with two or more monitors, pills docking to the wrong spot because of pills on another
+  monitor
+- **0.8.2** — Fixed the `in N minutes/hours` row in the reminder menu: **only one suggested
+  value appearing** when the number box was clicked, and **the minutes/hours list being hard to
+  read in the dark theme**. The number and unit boxes are now the same width. Added a
+  `Tomorrow evening` preset
+- **0.8.1** — The reminder menu gained **`in N minutes/hours`**. You can type the number or pick
+  a common one, so intervals the presets don't cover ("in 40 minutes") can be set directly.
+  `Pick a time` can also use the **calendar and clock pickers** now (typing still works)
+- **0.8.0** — **You can set a reminder on any note.** In the context menu (or `⋯` in the title
+  bar) → **Reminder**, choose in 10 minutes / in 1 hour / this evening / tomorrow morning, or
+  pick a time, and Windows notifies you then. **Clicking the notification brings that note up** —
+  a closed note comes back, a collapsed pill expands, and the reminder clears itself once seen.
+  Reminder times are shared between devices (each device notifies you once), and a bell icon
+  marks them in the notes list and on the note.
+  > TokTok has to be running to notify you. Nothing fires while it is closed, and on the next
+  > start you only hear about reminders from the last two days. **Start with Windows** in the
+  > tray menu is recommended.
+
+  The context menu gained **Show same color** — it brings back every closed note of that color
+  at once. **Where a new note opens** changed too: it is placed next to the note you last worked
+  on without overlapping (the note whose `+` you pressed wins), or in the center of the screen
+  when no note is open.
+  Fixes: right-clicking inside a note's text now brings back **the standard Windows edit menu**
+  with copy and paste (right-clicking the toolbar or a pill still opens the TokTok menu), and
+  **the delete confirmation being hidden behind** a large always-on-top note
+- **0.7.0** — **You can take a note off the screen without deleting it.** Closing a note with ✕
+  (or `Alt+F4`) no longer discards it — **it stays in the `Ctrl+Alt+F` list** and can be shown
+  again from there. This is shared between devices, so tidying up on one PC tidies the other.
+  In the list you can **use note colors as groups to show or hide notes in bulk** (this applies
+  to search results too), and delete notes directly. The note toolbar was trimmed: background
+  color, opacity, always on top, collapse and delete moved to the **context menu** — also
+  reachable from `⋯` in the title bar, and from a collapsed pill.
+  **Memory use dropped sharply** with many notes open (23 processes → 4 with 20 notes).
+  Fixes: closing with the toolbar ✕ not being saved, so notes came back after a restart, and
+  notes being dragged with the right mouse button
+- **0.6.3** — The `Ctrl+Alt+F` window doubles as a **notes list**. Clear the search box and every
+  note appears, most recently edited first, and you can filter by note color. Search results and
+  Trash now show note content **as it really looks** instead of a trimmed summary (checklists and
+  formatting included), search terms are highlighted, and the view scrolls to them automatically.
+  Fixes: a note closed with `Alt+F4` could not be reopened without restarting TokTok (it now
+  comes back from "Show all notes" in the tray and from the list), and the scrollbars in the
+  search, Trash and Settings windows not matching the note window
+- **0.6.2** — Moved the update source back to its previous location. **If you were using 0.6.1,
+  please download and install this version manually** — 0.6.1 cannot receive automatic updates.
+  Once installed, later versions update automatically again
+- ~~**0.6.1** — A version that briefly moved where updates were fetched from~~ (no longer
+  available — please use 0.6.2)
+- **0.6.0** — Added a dark theme (auto / light / dark, at the top of Settings). In dark mode the
+  note body turns dark gray while the note color stays on the title bar and pill, so notes are
+  still easy to tell apart. `Ctrl+Alt+V` creates a new note from the clipboard.
+  Fixes: text typed after leaving a checklist with Enter keeping the strikethrough, pills
+  overlapping after "Collapse all" from the tray, a white flash when a window opened, and the
+  cursor showing as a text cursor over the body scrollbar
+- **0.5.1** — Updates are now downloaded and installed **only after asking you** (previously they
+  were downloaded silently). Added a setting to turn off automatic checks and a display of when
+  TokTok last checked. Reinstalling closes a running TokTok automatically — it saves and syncs
+  your edits first, so nothing is lost (previously "TokTok cannot be closed" appeared and you had
+  to quit it yourself)
+- **0.5.0** — Notes stranded off-screen are recovered automatically (unplugging a monitor or
+  changing resolution brings them back into view), Collapse all / Expand all in the tray, per-note
+  opacity (toolbar slider, 30–100%), `Ctrl`+wheel to change body text size (50–300%), and the exe
+  icon was replaced with a multi-size `.ico` so it stays sharp in the taskbar and Explorer.
+  Fixes: "always on top" set on another device not reaching this one, and pills overlapping when
+  several notes were collapsed quickly
+- **0.4.0** — Automatic updates (new versions download on their own and install with one click,
+  with the changelog shown in Settings), checklists, full-text search (`Ctrl+Alt+F`), and the
+  minimum size of an expanded note adjusted to 240×240
+- **0.3.0** — Direct Google Drive sync via the Drive API (no Drive desktop app required), note
+  content always encrypted (handled automatically with a built-in key, no passphrase to type),
+  a guard against running twice, the download changed from a portable exe to a one-click
+  installer, and the current and latest version shown in Settings and the tray
+- **0.2.1** — Added Start with Windows (a toggle in the tray menu)
+- **0.2.0** — Docked pills no longer overhang the screen edge (which looked broken on dual
+  monitors), Markdown-style list shortcuts (`-`/`1` + Tab → bulleted/numbered list), Tab no
+  longer moves focus out of the body, a new note is created on startup when there are none, and
+  the default body color brightens automatically on dark backgrounds (colors you picked yourself
+  are kept)
+- **0.1.0** — First release: frameless notes, collapse/expand with edge docking, rich text,
+  background colors, adjustable pill width, Trash, a tray icon, and an exe build
+
 ---
 
 이 페이지는 릴리스할 때마다 자동으로 갱신됩니다. 배포물 전용 저장소이며, 소스는 비공개입니다.
