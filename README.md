@@ -5,7 +5,7 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 다운로드
 
-**[최신 버전 1.2.0 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.0-Setup.exe`
+**[최신 버전 1.2.1 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.1-Setup.exe`
 
 [Releases](https://github.com/woosshe/TokTok-releases/releases/latest)에서 `TokTok-<버전>-Setup.exe`를
 받아 실행하면 됩니다. 마법사 없이 바로 설치되며 관리자 권한은 필요 없습니다.
@@ -53,6 +53,17 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 - **체크리스트** — 본문에 할 일 체크박스, 클릭으로 완료 처리
 
 ## 버전 히스토리
+
+- **1.2.1** — **Google Drive 동기화가 드라이브의 앱 전용 숨김 공간을 씁니다.** 이제 내 드라이브에
+  `TokTok` 폴더가 보이지 않습니다 — 열어 볼 일이 없는 폴더가 눈에 띄지 않고, 그 파일을 실수로
+  옮기거나 지워서 동기화가 깨질 일도 없습니다. 앱은 여전히 자기 데이터 외에는 드라이브의 어떤
+  파일도 볼 수 없습니다.
+
+  > ⚠️ **Drive 동기화를 쓰고 계셨다면 설정 창에서 `연결 해제` → `Google 계정 연결`을 한 번 해
+  > 주세요.** 그 전까지는 예전 위치로 그대로 동기화되므로 메모가 사라지지는 않지만, **재연결한
+  > 기기와 안 한 기기는 서로 다른 곳을 보게 되어 그 사이에는 메모가 오가지 않습니다** — 쓰시는
+  > 기기 모두에서 해 주시는 게 좋습니다. 전부 재연결한 뒤에는 **내 드라이브에 남은 `TokTok`
+  > 폴더를 지우셔도 됩니다.**
 
 - **1.2.0** — **앱을 한국어와 영어로 쓸 수 있습니다.** 설정 창의 **언어**에서 고르며, 기본값인
   `자동`은 Windows 언어를 따라갑니다(한국어면 한국어, 그 밖에는 영어). 바꾸면 다시 시작할지
@@ -161,6 +172,17 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
   배경색, 알약 폭 조절, 휴지통, 트레이 상주, exe 빌드
 
 ## Version history
+
+- **1.2.1** — **Google Drive sync now uses the hidden app-only area of your Drive.** The `TokTok`
+  folder no longer shows up in My Drive — a folder you never open stays out of your way, and the
+  file can't be moved or deleted by accident and break your sync. As before, TokTok can't see any
+  file in your Drive other than its own data.
+
+  > ⚠️ **If you were using Drive sync, open Settings and do `Disconnect` → `Connect Google
+  > account` once.** Until you do, that device keeps syncing to the old location, so nothing is
+  > lost — but **a reconnected device and a device that hasn't reconnected point at different
+  > places, so notes stop travelling between them.** Best to do it on every device you use. Once
+  > they're all reconnected, you can **delete the leftover `TokTok` folder in My Drive.**
 
 - **1.2.0** — **TokTok now speaks English as well as Korean.** Pick your language under
   **Language** in Settings; the default `Auto` follows your Windows language (Korean if your
