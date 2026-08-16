@@ -61,6 +61,8 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
   적어 둔 목록을 그대로 가져올 수 있습니다.
   메모의 **`+` 버튼으로 만든 새 메모는 그 메모와 같은 색**으로 나옵니다(트레이 아이콘과 단축키로
   만들 때는 기본색 그대로입니다).
+  설정 창의 **변경 내용**은 이제 서식대로 보입니다 — 지금 읽고 계신 이 글처럼 굵게·목록·인용이
+  그대로 그려집니다(예전에는 기호가 글자 그대로 보였습니다).
 
 - **1.2.1** — **Google Drive 동기화가 드라이브의 앱 전용 숨김 공간을 씁니다.** 이제 내 드라이브에
   `TokTok` 폴더가 보이지 않습니다 — 열어 볼 일이 없는 폴더가 눈에 띄지 않고, 그 파일을 실수로
@@ -188,6 +190,8 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
   list** — handy for bringing over a list you wrote somewhere else.
   A note made with a note's **`+` button now takes that note's colour** (the tray icon and the
   keyboard shortcut still make the default yellow one).
+  **What's new** in Settings is now rendered with its formatting — bold, lists and quotes appear
+  the way you're reading them here, instead of showing the raw markup.
 
 - **1.2.1** — **Google Drive sync now uses the hidden app-only area of your Drive.** The `TokTok`
   folder no longer shows up in My Drive — a folder you never open stays out of your way, and the
