@@ -5,7 +5,7 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 다운로드
 
-**[최신 버전 1.2.1 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.1-Setup.exe`
+**[최신 버전 1.2.2 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.2-Setup.exe`
 
 [Releases](https://github.com/woosshe/TokTok-releases/releases/latest)에서 `TokTok-<버전>-Setup.exe`를
 받아 실행하면 됩니다. 마법사 없이 바로 설치되며 관리자 권한은 필요 없습니다.
@@ -53,6 +53,14 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 - **체크리스트** — 본문에 할 일 체크박스, 클릭으로 완료 처리
 
 ## 버전 히스토리
+
+- **1.2.2** — **여러 줄을 한 번에 체크리스트로 만들 수 있습니다.** 줄을 여러 개 선택하고 체크리스트
+  버튼을 누르면 줄마다 체크 항목이 됩니다(예전에는 선택한 글이 지워지고 빈 항목 하나만 남았습니다).
+  이미 만들어 둔 글머리·번호 목록을 골라 눌러도 그대로 체크리스트가 됩니다.
+  **`- ` 이나 `1. ` 로 시작하는 글을 붙여넣으면 글머리·번호 목록으로 들어옵니다** — 다른 곳에
+  적어 둔 목록을 그대로 가져올 수 있습니다.
+  메모의 **`+` 버튼으로 만든 새 메모는 그 메모와 같은 색**으로 나옵니다(트레이 아이콘과 단축키로
+  만들 때는 기본색 그대로입니다).
 
 - **1.2.1** — **Google Drive 동기화가 드라이브의 앱 전용 숨김 공간을 씁니다.** 이제 내 드라이브에
   `TokTok` 폴더가 보이지 않습니다 — 열어 볼 일이 없는 폴더가 눈에 띄지 않고, 그 파일을 실수로
@@ -172,6 +180,14 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
   배경색, 알약 폭 조절, 휴지통, 트레이 상주, exe 빌드
 
 ## Version history
+
+- **1.2.2** — **Turn several lines into a checklist at once.** Select multiple lines and press the
+  checklist button and every line becomes its own item (it used to wipe the selection and leave a
+  single empty item). Picking an existing bulleted or numbered list works the same way.
+  **Paste text whose lines start with `- ` or `1. ` and it comes in as a bulleted or numbered
+  list** — handy for bringing over a list you wrote somewhere else.
+  A note made with a note's **`+` button now takes that note's colour** (the tray icon and the
+  keyboard shortcut still make the default yellow one).
 
 - **1.2.1** — **Google Drive sync now uses the hidden app-only area of your Drive.** The `TokTok`
   folder no longer shows up in My Drive — a folder you never open stays out of your way, and the
