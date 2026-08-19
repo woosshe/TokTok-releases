@@ -5,7 +5,7 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 다운로드
 
-**[최신 버전 1.2.2 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.2-Setup.exe`
+**[최신 버전 1.2.3 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.3-Setup.exe`
 
 [Releases](https://github.com/woosshe/TokTok-releases/releases/latest)에서 `TokTok-<버전>-Setup.exe`를
 받아 실행하면 됩니다. 마법사 없이 바로 설치되며 관리자 권한은 필요 없습니다.
@@ -54,6 +54,11 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 버전 히스토리
 
+- **1.2.3** — **원격 데스크톱을 다녀와도 메모와 알약 크기가 그대로입니다.** 원격 세션은 화면
+  배율이 달라서, 돌아오면 알약이 두 배로 커지거나 최소 폭으로 쪼그라들고 펼친 메모도 두 배로
+  부풀어 있었습니다. 게다가 그 크기가 저장까지 돼 다시 켜도 그대로였습니다. 이제 직접 조절한
+  크기만 저장하고, 화면 구성이 바뀌면 원래 크기로 되돌립니다. 해상도 변경·모니터 연결이나
+  분리도 마찬가지입니다.
 - **1.2.2**
   - **여러 줄을 한 번에 체크리스트로 만들 수 있습니다.** 줄을 여러 개 선택하고 체크리스트 버튼을
     누르면 줄마다 체크 항목이 됩니다(예전에는 선택한 글이 지워지고 빈 항목 하나만 남았습니다).
@@ -225,6 +230,12 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## Version history
 
+- **1.2.3** — **Notes and pills keep their size across a Remote Desktop session.** A remote
+  session runs at a different display scale, so coming back left pills twice as tall (or shrunk
+  to their minimum width) and expanded notes doubled in size — and that size was saved, so it
+  survived a restart. Now only sizes you set yourself are stored, and the original size is
+  restored once the display settles. The same goes for resolution changes and plugging or
+  unplugging a monitor.
 - **1.2.2**
   - **Turn several lines into a checklist at once.** Select multiple lines and press the checklist
     button and every line becomes its own item (it used to wipe the selection and leave a single
