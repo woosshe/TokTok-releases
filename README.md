@@ -5,7 +5,7 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 다운로드
 
-**[최신 버전 1.2.3 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.3-Setup.exe`
+**[최신 버전 1.2.4 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.4-Setup.exe`
 
 [Releases](https://github.com/woosshe/TokTok-releases/releases/latest)에서 `TokTok-<버전>-Setup.exe`를
 받아 실행하면 됩니다. 마법사 없이 바로 설치되며 관리자 권한은 필요 없습니다.
@@ -54,6 +54,15 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 버전 히스토리
 
+- **1.2.4**
+  - **알약(접어 둔 메모)에도 목록 표시가 나옵니다.** 체크리스트는 `☐`·`☑`, 번호 목록은 `1.`,
+    글머리 목록은 `•`가 앞에 붙고, 체크한 항목은 알약에서도 취소선으로 보입니다.
+  - **여러 줄짜리 메모가 알약에서 붙어 보이던 것을 고쳤습니다** — `내용111내용222`처럼 이어지던
+    것이 이제 줄 사이를 띄워 `내용111 내용222`로 보입니다.
+  - **원격 데스크톱을 다녀왔을 때 알약이 커져 있던 문제를 마저 고쳤습니다.** 1.2.3에서 크기를
+    되돌리도록 했는데, 접어 둔 알약은 창이 알려주는 크기와 실제 크기가 어긋나 있어 "이미 맞다"고
+    판단하고 그냥 지나갔습니다. 이제 화면 구성이 바뀌면 알약은 되돌리는 대신 저장해 둔 값으로
+    다시 그립니다.
 - **1.2.3** — **원격 데스크톱을 다녀와도 메모와 알약 크기가 그대로입니다.** 원격 세션은 화면
   배율이 달라서, 돌아오면 알약이 두 배로 커지거나 최소 폭으로 쪼그라들고 펼친 메모도 두 배로
   부풀어 있었습니다. 게다가 그 크기가 저장까지 돼 다시 켜도 그대로였습니다. 이제 직접 조절한
@@ -230,6 +239,15 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## Version history
 
+- **1.2.4**
+  - **Pills (collapsed notes) now show list markers too.** Checklists get `☐`/`☑`, numbered lists
+    get `1.` and bulleted lists get `•`, and a checked item is struck through in the pill as well.
+  - **Fixed multi-line notes running together in the pill** — `line111line222` now reads
+    `line111 line222`.
+  - **Finishes the fix for pills growing after a Remote Desktop session.** 1.2.3 restored window
+    sizes, but a collapsed pill reports a size that no longer matches the real window, so the
+    check decided it was already correct and skipped it. Pills are now redrawn from their saved
+    size whenever the display configuration changes.
 - **1.2.3** — **Notes and pills keep their size across a Remote Desktop session.** A remote
   session runs at a different display scale, so coming back left pills twice as tall (or shrunk
   to their minimum width) and expanded notes doubled in size — and that size was saved, so it
