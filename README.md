@@ -5,7 +5,7 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 다운로드
 
-**[최신 버전 1.2.4 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.4-Setup.exe`
+**[최신 버전 1.2.5 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.5-Setup.exe`
 
 [Releases](https://github.com/woosshe/TokTok-releases/releases/latest)에서 `TokTok-<버전>-Setup.exe`를
 받아 실행하면 됩니다. 마법사 없이 바로 설치되며 관리자 권한은 필요 없습니다.
@@ -54,6 +54,12 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 버전 히스토리
 
+- **1.2.5**
+  - **메모 창의 ✕ 버튼이 할 일을 고를 수 있습니다.** 설정 창의 `닫기 버튼`에서 `숨기기`(기본) ·
+    `접기` · `삭제` 중 하나를 고르면 그때부터 ✕가 그 동작을 합니다. `삭제`도 평소처럼 한 번
+    물어보고 휴지통으로 보냅니다. Alt+F4는 실수로 지우는 일이 없도록 언제나 숨기기입니다.
+  - **우클릭 메뉴에 `숨기기`가 생겼습니다.** ✕를 접기나 삭제로 바꿔 두어도 메모를 화면에서만
+    내리는 길이 그대로 남습니다.
 - **1.2.4**
   - **알약(접어 둔 메모)에도 목록 표시가 나옵니다.** 체크리스트는 `☐`·`☑`, 번호 목록은 `1.`,
     글머리 목록은 `•`가 앞에 붙고, 체크한 항목은 알약에서도 취소선으로 보입니다.
@@ -239,6 +245,12 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## Version history
 
+- **1.2.5**
+  - **You can choose what the ✕ button on a note does.** Pick `Hide` (the default), `Collapse` or
+    `Delete` under `Close button` in Settings. `Delete` still asks once and moves the note to the
+    trash. Alt+F4 always hides, so a stray keystroke can never delete a note.
+  - **Added `Hide` to the right-click menu.** Even with ✕ set to collapse or delete, you can still
+    take a note off the screen and keep it in the list.
 - **1.2.4**
   - **Pills (collapsed notes) now show list markers too.** Checklists get `☐`/`☑`, numbered lists
     get `1.` and bulleted lists get `•`, and a checked item is struck through in the pill as well.
