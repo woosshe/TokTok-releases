@@ -5,7 +5,7 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 다운로드
 
-**[최신 버전 1.2.5 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.5-Setup.exe`
+**[최신 버전 1.2.6 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.6-Setup.exe`
 
 [Releases](https://github.com/woosshe/TokTok-releases/releases/latest)에서 `TokTok-<버전>-Setup.exe`를
 받아 실행하면 됩니다. 마법사 없이 바로 설치되며 관리자 권한은 필요 없습니다.
@@ -28,7 +28,7 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
   아무 쪽이나 쓰면 됩니다. 알림을 클릭하면 그 메모가 화면에 뜨고(닫아 둔 메모도, 접어 둔 알약도)
   확인한 알림은 해제됩니다. 알림 시각은 기기 간에 공유됩니다.
   > **앱이 떠 있어야 알림이 옵니다.** TokTok은 백그라운드 서비스가 아니라 트레이 앱이라
-  > 종료한 동안에는 알림이 울리지 않습니다(다시 켤 때 하루 이내로 지난 것만 알려줍니다).
+  > 종료한 동안에는 알림이 울리지 않습니다(다시 켤 때 48시간 이내로 지난 것만 알려줍니다).
   > 트레이 메뉴의 **Windows 시작 시 자동 실행**을 켜 두시길 권합니다.
 - **접기/펼치기** — 접으면 화면 가장자리에 알약으로 도킹, 부드러운 애니메이션.
   알약끼리 겹치지 않게 자동 배치, 안쪽 그립으로 폭 조절(100–300px).
@@ -54,6 +54,12 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 버전 히스토리
 
+- **1.2.6**
+  - **부팅 직후 뜨던 오류 대화상자를 없앴습니다.** 특히 켜지자마자 원격으로 접속하면 화면 배율이
+    바뀌는 순간 `A JavaScript error occurred in the main process` 창이 떴습니다.
+  - **화면 배율이 바뀐 뒤 알약(접어 둔 메모)이 이상한 크기로 굳던 문제를 고쳤습니다.** 위 오류가
+    앱을 붙잡는 바람에 크기를 되돌리는 처리가 같이 멈췄고, 되돌리더라도 화면이 아직 바뀌는 중에
+    실행돼 또 어긋난 크기가 됐습니다. 이제 화면이 가라앉은 뒤에 한 번만 손봅니다.
 - **1.2.5**
   - **메모 창의 ✕ 버튼이 할 일을 고를 수 있습니다.** 설정 창의 `닫기 버튼`에서 `숨기기`(기본) ·
     `접기` · `삭제` 중 하나를 고르면 그때부터 ✕가 그 동작을 합니다. `삭제`도 평소처럼 한 번
@@ -245,6 +251,14 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## Version history
 
+- **1.2.6**
+  - **Fixed an error dialog right after startup.** Connecting over Remote Desktop just after the
+    PC booted could pop up `A JavaScript error occurred in the main process` as the display scale
+    changed.
+  - **Fixed pills (collapsed notes) getting stuck at the wrong size after a scale change.** The
+    error above froze the app, which also stopped the size repair; and even when it ran, it ran
+    while the display was still changing, so the size came out wrong again. It now waits until
+    the display has settled and fixes them once.
 - **1.2.5**
   - **You can choose what the ✕ button on a note does.** Pick `Hide` (the default), `Collapse` or
     `Delete` under `Close button` in Settings. `Delete` still asks once and moves the note to the
