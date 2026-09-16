@@ -5,7 +5,7 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 다운로드
 
-**[최신 버전 1.2.6 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.6-Setup.exe`
+**[최신 버전 1.2.7 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.7-Setup.exe`
 
 [Releases](https://github.com/woosshe/TokTok-releases/releases/latest)에서 `TokTok-<버전>-Setup.exe`를
 받아 실행하면 됩니다. 마법사 없이 바로 설치되며 관리자 권한은 필요 없습니다.
@@ -54,6 +54,15 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 버전 히스토리
 
+- **1.2.7**
+  - **앱 아이콘이 바뀌었습니다.** 우측 위 귀퉁이를 접은 메모 모양입니다.
+  - **고해상도 화면에서 트레이 아이콘이 뿌옇던 문제를 고쳤습니다.** 화면 배율이 150%·200%면
+    윈도우는 그만큼 큰 아이콘을 요구하는데 작은 것 한 장만 주고 있어서 늘려 그려졌습니다.
+    이제 배율에 맞는 크기를 골라 씁니다. 바탕화면·작업 표시줄의 아이콘도 크기마다 다시 만들었습니다.
+  - **설정 창에서 고른 항목의 표시를 정리했습니다.** 체크 표시와 굵은 글씨를 뺐습니다 — 둘 다
+    버튼 폭을 바꿔서 고를 때마다 줄이 흔들렸습니다. 아이콘도 어떤 건 컬러, 어떤 건 단색으로
+    갈려 있던 것을 단색으로 맞췄습니다.
+  - **설정 창 맨 아래 `nion.kr`을 누르면 홈페이지가 열립니다.**
 - **1.2.6**
   - **부팅 직후 뜨던 오류 대화상자를 없앴습니다.** 특히 켜지자마자 원격으로 접속하면 화면 배율이
     바뀌는 순간 `A JavaScript error occurred in the main process` 창이 떴습니다.
@@ -251,6 +260,16 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## Version history
 
+- **1.2.7**
+  - **New app icon** — a note with its top-right corner folded over.
+  - **Fixed a blurry tray icon on high-DPI displays.** At 150% or 200% scaling Windows asks for a
+    correspondingly larger icon, but the app only offered one small image, so it was stretched.
+    It now picks the size that matches the scale. The desktop and taskbar icons were rebuilt at
+    every size as well.
+  - **Tidied up how the selected option looks in Settings.** The check mark and bold text are
+    gone — both changed the button width, so the row shifted every time you picked something.
+    The icons are now all monochrome; some of them used to render in color.
+  - **Clicking `nion.kr` at the bottom of Settings opens the website.**
 - **1.2.6**
   - **Fixed an error dialog right after startup.** Connecting over Remote Desktop just after the
     PC booted could pop up `A JavaScript error occurred in the main process` as the display scale
