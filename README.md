@@ -5,7 +5,7 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 다운로드
 
-**[최신 버전 1.2.7 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.7-Setup.exe`
+**[최신 버전 1.2.8 내려받기](https://github.com/woosshe/TokTok-releases/releases/latest)** — `TokTok-1.2.8-Setup.exe`
 
 [Releases](https://github.com/woosshe/TokTok-releases/releases/latest)에서 `TokTok-<버전>-Setup.exe`를
 받아 실행하면 됩니다. 마법사 없이 바로 설치되며 관리자 권한은 필요 없습니다.
@@ -54,6 +54,9 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## 버전 히스토리
 
+- **1.2.8**
+  - **알림 시각이 되면 알림 대신 오류 창이 뜨던 문제를 고쳤습니다.**
+  - **`- `나 `1. `로 시작하는 여러 줄을 붙여넣으면 첫 줄만 목록이 되던 문제를 고쳤습니다.** 메모장처럼 서식 없는 글을 붙일 때 그랬습니다.
 - **1.2.7**
   - **앱 아이콘이 바뀌었습니다.** 우측 위 귀퉁이를 접은 메모 모양입니다.
   - **고해상도 화면에서 트레이 아이콘이 뿌옇던 문제를 고쳤습니다.** 화면 배율이 150%·200%면
@@ -259,6 +262,9 @@ Windows용 스티키 노트 관리자. Electron 트레이 앱으로, 프레임�
 
 ## Version history
 
+- **1.2.8**
+  - **Fixed an error window that appeared instead of the reminder notification.**
+  - **Fixed pasted lines starting with `- ` or `1. ` where only the first line became a list.** It happened with plain text, such as text copied from Notepad.
 - **1.2.7**
   - **New app icon** — a note with its top-right corner folded over.
   - **Fixed a blurry tray icon on high-DPI displays.** At 150% or 200% scaling Windows asks for a
